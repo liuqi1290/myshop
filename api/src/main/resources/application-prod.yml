@@ -1,0 +1,4 @@
+spring:
+  datasource:                                           # 数据源的相关配置
+    url: jdbc:mysql://118.190.56.57:3307/shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+    password: lq129011
