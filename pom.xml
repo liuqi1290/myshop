@@ -16,6 +16,12 @@
         <module>service</module>
         <module>api</module>
         <module>hasorAdmin</module>
+        <module>sso</module>
+        <module>es</module>
+        <module>fastdfs_dev</module>
+        <module>rabbitmq</module>
+        <module>rabbitmq-produser</module>
+        <module>rabbitmq-consumer</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -98,7 +104,16 @@
             <artifactId>pagehelper-spring-boot-starter</artifactId>
             <version>1.2.12</version>
         </dependency>
-
+        <!--引入spring session 组件-->
+       <!-- <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+        </dependency>-->
+         <!--引入spring  安全框架-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
         <!--整合Redis-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -149,12 +164,12 @@
             <version>1.7.21</version>
         </dependency>
 
-        <!--打包war [3] 添加依赖-->
+       <!-- 打包war [3] 添加依赖
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <scope>provided</scope>
-        </dependency>
+        </dependency>-->
 
         <!--连通 Spring 和 Hasor-->
         <dependency>

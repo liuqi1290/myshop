@@ -24,4 +24,6 @@ public class hellowController {
         session.setAttribute("userInfo","00");
         return "hellow wold";
     }
+
+
 }

@@ -1,0 +1,20 @@
+spring:
+  datasource:                                           # 数据源的相关配置
+    url: jdbc:mysql://118.190.56.57:3307/shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+    password: lq129011
+  redis:
+    database: 1
+    host: 118.190.56.57
+    port: 6379
+    password: lq129011@
+    #哨兵模式配置
+    #sentinel:
+     # nodes: 118.190.56.57:26379
+     # master: liuqi-master
+
+
+
+#测试环境打印sql
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

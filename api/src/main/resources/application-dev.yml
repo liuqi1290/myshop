@@ -1,3 +1,4 @@
+
 spring:
   datasource:                                           # 数据源的相关配置
     url: jdbc:mysql://118.190.56.57:3307/shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
@@ -7,9 +8,17 @@ spring:
     host: 118.190.56.57
     port: 6379
     password: lq129011@
+    #哨兵模式配置
+    #sentinel:
+     # nodes: 118.190.56.57:26379
+     # master: liuqi-master
 
 #测试环境打印sql
 mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
+#支付中心的调用地址
+paymentUrl: http://payment.t.mukewang.com/foodie-payment/payment/createMerchantOrder
+#微信支付成功 -> 支付中心 -> 天天吃货平台|-> 回调通知的url
+payReturnUrl: http://www.mewboy.cn/shop-api/orders/notifyMerchantOrderPaid
