@@ -18,7 +18,7 @@ spring:
       connection-test-query: SELECT 1
 
   rabbitmq:
-    addresses: 118.190.56.57:5672
+    addresses: 192.168.52.130:5672
     username: admin
     password: admin
     virtual-host: /lq_host

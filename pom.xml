@@ -19,9 +19,13 @@
         <module>sso</module>
         <module>es</module>
         <module>fastdfs_dev</module>
-        <module>rabbitmq</module>
         <module>rabbitmq-produser</module>
         <module>rabbitmq-consumer</module>
+        <module>rabbit-parent</module>
+        <module>shejimoshi</module>
+        <module>suanfa</module>
+        <module>hadoop</module>
+        <module>es-job</module>
     </modules>
 
     <packaging>pom</packaging>
