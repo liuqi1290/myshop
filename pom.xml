@@ -26,6 +26,7 @@
         <module>suanfa</module>
         <module>hadoop</module>
         <module>es-job</module>
+        <module>javajichu</module>
     </modules>
 
     <packaging>pom</packaging>
